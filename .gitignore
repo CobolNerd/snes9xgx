@@ -3,3 +3,6 @@
 /build_wii
 /build_gc
 /executables
+.tmp.driveupload/
+.vscode/
+.tmp.drivedownload/
