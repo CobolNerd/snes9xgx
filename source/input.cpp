@@ -40,6 +40,7 @@
 #include "utils/xbox360.h"
 #include "utils/hornet.h"
 #include "utils/mayflash.h"
+#include "utils/ibuffalo.h"
 #endif
 
 #define ANALOG_SENSITIVITY 30
