@@ -343,6 +343,7 @@ UpdatePads()
 	XBOX360_ScanPads();
 	Hornet_ScanPads();
 	Mayflash_ScanPads();
+	Ibuffalo_ScanPads();
 	WPAD_ScanPads();
 	#endif
 
@@ -547,6 +548,8 @@ static void decodepad (int chan, int emuChan)
     jp |= XBOX360_ButtonsHeld(chan);
 	jp |= Hornet_ButtonsHeld(chan);
 	jp |= Mayflash_ButtonsHeld(chan);
+	jp |= Ibuffalo_ButtonsHeld(chan);
+
 #endif
 
 	/***
@@ -918,7 +921,7 @@ void SetDefaultButtonMap ()
 char* GetUSBControllerInfo()
 {
     static char info[100];
-    snprintf(info, 100, "Retrode: %s, XBOX360: %s, Hornet: %s, Mayflash: %s", Retrode_Status(), XBOX360_Status(), Hornet_Status(), Mayflash_Status());
+    snprintf(info, 100, "Retrode: %s, XBOX360: %s, Hornet: %s, Mayflash: %s, iBuffalo: %s", Retrode_Status(), XBOX360_Status(), Hornet_Status(), Mayflash_Status(), Ibuffalo_Status());
     return info;
 }
 #endif

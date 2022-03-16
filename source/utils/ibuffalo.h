@@ -1,5 +1,5 @@
-#ifndef _MAYFLASH_H_
-#define _MAYFLASH_H_
+#ifndef _IBUFFALO_H_
+#define _IBUFFALO_H_
 
 #include <gctypes.h>
 
@@ -7,9 +7,9 @@
 extern "C" {
 #endif
 
-bool Mayflash_ScanPads();
-u32 Mayflash_ButtonsHeld(int chan);
-char* Mayflash_Status();
+bool Ibuffalo_ScanPads();
+u32 Ibuffalo_ButtonsHeld(int chan);
+char* Ibuffalo_Status();
 
 #ifdef __cplusplus
 }
