@@ -45,8 +45,6 @@
 #include "mem2.h"
 #include "utils/wiidrc.h"
 #include "utils/FreeTypeGX.h"
-//#include "utils/wifi_gecko.hpp"
-#include "utils/wifi_gecko.h"
 
 #include "snes9x/snes9x.h"
 #include "snes9x/fxemu.h"
@@ -386,27 +384,8 @@ void InitializeSnes9x() {
 	AllocGfxMem();
 }
 
-// static void *xfb = NULL;
-// static GXRModeObj *rmode = NULL;
-
-// #define GPRINTF_SIZE	256
-// char gprintfBuffer[GPRINTF_SIZE];
-
-// void gprintf(const char *format, ...)
-// {
-// 	va_list va;
-// 	va_start(va, format);
-// 	size_t len = vsnprintf(gprintfBuffer, GPRINTF_SIZE - 1, format, va);
-// 	va_end(va);
-
-// 	__out_write(NULL, 0, gprintfBuffer, len);
-// 	WiFiDebugger.Send(gprintfBuffer, len);
-// }
-
 int main(int argc, char *argv[])
 {
-	//gprintf("RVR Test");
-
 	#ifdef USE_VM
 	VM_Init(ARAM_SIZE, MRAM_BACKING);		// Setup Virtual Memory with the entire ARAM
 	#endif
