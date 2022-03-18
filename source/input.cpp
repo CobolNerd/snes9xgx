@@ -337,6 +337,9 @@ void ResetControls(int consoleCtrl, int wiiCtrl)
 void
 UpdatePads()
 {
+	
+	//LogToFile("UpdatePads");
+
 	#ifdef HW_RVL
 	WiiDRC_ScanPads();
 	Retrode_ScanPads();
@@ -921,7 +924,7 @@ void SetDefaultButtonMap ()
 char* GetUSBControllerInfo()
 {
     static char info[100];
-    snprintf(info, 100, "Retrode: %s, XBOX360: %s, Hornet: %s, Mayflash: %s, iBuffalo: %s", Retrode_Status(), XBOX360_Status(), Hornet_Status(), Mayflash_Status(), Ibuffalo_Status());
+    snprintf(info, 100, "Retrode: %s, XBOX360: %s, Hornet: %s, iBuffalo: %s\n, Mayflash: %s", Retrode_Status(), XBOX360_Status(), Hornet_Status(), Ibuffalo_Status(), Mayflash_Status());
     return info;
 }
 #endif

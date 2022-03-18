@@ -1,10 +1,6 @@
 {
-    "C_Cpp.errorSquiggles": "Disabled",
-    "makefile.launchConfigurations": [
-        {
-            "cwd": "c:\\Development\\Experiments\\snes9xgx\\executables",
-            "binaryPath": "c:\\Development\\Experiments\\snes9xgx\\executables\\snes9xgx-wii.elf",
-            "binaryArgs": []
-        }
-    ]
+    "C_Cpp.dimInactiveRegions": false,
+    "files.associations": {
+        "system_error": "c"
+    }
 }

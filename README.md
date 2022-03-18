@@ -56,6 +56,10 @@ Wii homebrew is WiiBrew (www.wiibrew.org).
 
 ## UPDATE HISTORY
 
+[4.5.3 - March 18, 2022]
+
+* Added support for Buffalo iBuffalo Classic USB Gamepad for PC
+
 [4.5.2 - March 23, 2021]
 
 * Added support for Mayflash 2-port SNES USB adapter (thanks EthanArmbrust!)
