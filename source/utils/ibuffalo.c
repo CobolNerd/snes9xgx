@@ -52,7 +52,7 @@ static void open()
 
 	for (int i = 0; i < dev_count; ++i)
 	{
-		if (!isMayflashGamepad(dev_entry[i]))
+		if (!isIbuffaloGamepad(dev_entry[i]))
 		{
 			continue;
 		}
@@ -132,10 +132,7 @@ void Ibuffalo_ScanPads()
 	jp |= (buf[1] == 0)   ? PAD_BUTTON_UP : 0;
 	jp |= (buf[1] == 255) ? PAD_BUTTON_DOWN : 0;
 
-	// Required, otherwise if the returned port isn't the one we are looking for, jp will be set to zero,
-	// and held buttons are not possible
-
-	jpIbuffalo[buf[0] - 1] = jp;
+	jpIbuffalo[0] = jp;
 }
 
 u32 Ibuffalo_ButtonsHeld(int chan)
