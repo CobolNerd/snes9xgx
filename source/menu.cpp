@@ -32,7 +32,6 @@
 #include "preferences.h"
 #include "button_mapping.h"
 #include "input.h"
-#include "utils/ibuffalo.h"
 #include "filter.h"
 #include "filelist.h"
 #include "gui/gui.h"

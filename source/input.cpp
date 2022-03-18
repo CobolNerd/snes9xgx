@@ -337,9 +337,6 @@ void ResetControls(int consoleCtrl, int wiiCtrl)
 void
 UpdatePads()
 {
-	
-	//LogToFile("UpdatePads");
-
 	#ifdef HW_RVL
 	WiiDRC_ScanPads();
 	Retrode_ScanPads();
@@ -552,7 +549,6 @@ static void decodepad (int chan, int emuChan)
 	jp |= Hornet_ButtonsHeld(chan);
 	jp |= Mayflash_ButtonsHeld(chan);
 	jp |= Ibuffalo_ButtonsHeld(chan);
-
 #endif
 
 	/***

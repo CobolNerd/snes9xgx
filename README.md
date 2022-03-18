@@ -58,7 +58,7 @@ Wii homebrew is WiiBrew (www.wiibrew.org).
 
 [4.5.3 - March 18, 2022]
 
-* Added support for Buffalo iBuffalo Classic USB Gamepad for PC
+* Added support for Buffalo iBuffalo Classic USB Gamepad for PC (based on mayflash.c, thanks EthanArmbrust!)
 
 [4.5.2 - March 23, 2021]
 

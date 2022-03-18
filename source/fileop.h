@@ -44,7 +44,6 @@ size_t LoadFont(char *filepath);
 void LoadBgMusic();
 size_t SaveFile(char * buffer, char *filepath, size_t datasize, bool silent);
 size_t SaveFile(char * filepath, size_t datasize, bool silent);
-size_t LogToFile(char * buffer);
 
 extern unsigned char *savebuffer;
 extern u8 *ext_font_ttf;
